@@ -2,65 +2,29 @@
 
 ---
 
-<div class="footer">
-  <div class="container">
-    <div class="column">
-      <h2>Contact Us</h2>
-      <p>123 Main St.</p>
-      <p>Anytown, USA 12345</p>
-      <p>Phone: (123) 456-7890</p>
-      <p>Email: info@example.com</p>
+
+<div class="flex flex-row justify-center bg-[url('src/Assets/images/layered-waves.svg')] bg-orange-100 bg-cover bg-center bg-no-repeat aspect-[2160/360]">
+    <div class="flex flex-col justify-center">
+    <div class="flex flex-row p-2 gap-[200px]">
+      <div class="flex flex-col justify-center mt-12 p-10 text-orange-950">
+        <h2 class="text-lg font-bold">On This Page</h2>
+        <ul class="flex flex-col mx-3 pt-3 gap-1">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col justify-center p-10 text-orange-950">
+        <h2 class="text-lg font-bold">Links</h2>
+        <ul class="flex flex-row">
+          <li><a class="text-white flex rounded-lg text-xl duration-300 px-5 py-3 hover:bg-[#4d4d4d]" href="https://www.linkedin.com/in/matt-hanger-6212b1267/" target="_blank"><img src="src/Assets/images/linkedin.png" alt="LinkedIn" height="35" width="35"/></a></li>
+          <li><a class="text-white flex rounded-lg text-xl duration-300 px-5 py-3 hover:bg-[#4d4d4d]" href="https://github.com/Matt-Hanger" target="_blank"><img src="src/Assets/images/github.png" alt="GitHub" height="35" width="35"/></a></li>
+          <li><a class="text-white flex rounded-lg text-xl duration-300 px-5 py-3 hover:bg-[#4d4d4d]" href="src/Assets/Documents/MattHanger_Resume.pdf" target="_blank"><img src="src/Assets/images/resume.png" alt="Resume" width="28"/></a></li>
+        </ul>
+      </div>
     </div>
-    <div class="column">
-      <h2>Links</h2>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-      </ul>
     </div>
-    <div class="column">
-      <h2>Follow Us</h2>
-      <ul class="social-links">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
-    </div>
-  </div>
-  <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
 </div>
+<p class="text-orange-500 text-center p-5">&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
 
-<style>
-    .footer {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        background-color: aquamarine;
-        text-align: center;
-
-    }
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: blueviolet;
-    }
-    .column {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
-    a {
-        color: black;
-        padding: 1rem;
-        text-decoration: none;
-    }
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-</style>

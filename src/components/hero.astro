@@ -1,72 +1,15 @@
 ---
-import Nav from "./nav.astro";
-const { title, subtitle, image } = Astro.props
+const name = "Matt";
 ---
 
-<div class="hero">
-  <div class="hero-content">
-    <h1>{title}</h1>
-    <h1>{subtitle}</h1>
-    <ul>
-        <li><a href="" >Skills</a></li>
-        <li><a href="" >Projects</a></li>
-        <li><a href="" >About</a></li>
-        <li><a href="" >Contact</a></li>
+<div class="flex container mx-auto mx-md h-screen items-center">
+  <div class="flex flex-col justify-start mb-20 p-10">
+    <h1 class="font-bold text-white py-5 text-7xl">Hi, I'm <span class="text-orange-500">{name}</span>.<br> I'm a front-end developer.</h1>
+    <ul class="flex flex-row justify-start">
+        <li class="text-white text-xl px-5 border-2 py-3 hover:bg-orange-500"><a href="#skills" >Skills</a></li>
+        <li class="text-white text-xl px-5 border-2 py-3 hover:bg-orange-500"><a href="#projects" >Projects</a></li>
+        <li class="text-white text-xl px-5 border-2 py-3 hover:bg-orange-500"><a href="#about" >About</a></li>
+        <li class="text-white text-xl px-5 border-2 py-3 hover:bg-orange-500"><a href="#contact" >Contact</a></li>
     </ul>
   </div>
 </div>
-
-<style>
-    .hero {
-        display: flex;
-        flex-direction: row;
-        max-width: 60%;
-        margin: 0 auto ;
-        padding: 2rem;
-        height: 800px;
-        margin-top: 300px;
-        margin-bottom: 300px;
-    }
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .hero-image {
-        display: flex;
-    }
-    .hero-image img {
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-    }
-    .hero-content h1 {
-        color: whitesmoke;
-        font-size: 4rem;
-        margin: 0;
-    }
-    .hero-content p {
-        color: whitesmoke;
-        font-size: 4rem;
-    }
-    a {
-        color: whitesmoke;
-        display: block;
-        font-size: 16pt;
-        padding: 5px 15px 5px 15px;
-        border: 2px solid;
-        border-color: whitesmoke;
-        text-decoration: none;
-    }
-    a:hover {
-        background-color: whitesmoke;
-        color: rgb(77, 77, 77);
-    }
-    ul {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        margin-top: 15px;
-        padding: 0;
-    }
-</style>
