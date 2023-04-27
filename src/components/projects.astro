@@ -1,15 +1,38 @@
 ---
 import bottomskillswave from "../assets/images/bottomskillswave.png";
+import climber from "../assets/images/climber2.jpg";
+import plans from "../assets/images/plans.jpg";
 ---
 
 <div class="flex">
   <div class="w-screen">
     <img class="object-fill w-screen" src={bottomskillswave} alt="waves" />
-    <div
-      id="projects"
-      class="container flex justify-center mx-auto max-w-[65%] my-10 h-[500px] bg-orange-50 rounded-lg"
-    >
-      <h1 class="text-orange-700 p-10 text-5xl">Projects</h1>
+    <div id="projects" class="flex flex-col mx-auto max-w-[65%] my-10">
+      <div><h1 class="text-orange-700 p-10 text-5xl">Projects</h1></div>
+      <div class="grid grid-cols-2 gap-4">
+        <div
+          class="rounded-lg shadow-lg bg-[url(src/assets/images/climber3.jpg)] min-h-[150px] w-full cursor-pointer flex flex-row flex-wrap justify-end bg-no-repeat bg-cover bg-[center_top_-6rem] bg-blend-multiply hover:min-h-[200px] duration-300"
+        >
+          <div class="p-2">
+            <h1
+              class="text-5xl text-white p-3 m-5 mr-20 bg-orange-500 rounded-xl bg-opacity-70 hover:text-6xl hover:bg-opacity-90 duration-200"
+            >
+              Climbs
+            </h1>
+          </div>
+        </div>
+        <div
+          class="rounded-lg shadow-lg bg-[url(src/assets/images/plans.jpg)] min-h-[150px] w-full cursor-pointer flex flex-row flex-wrap justify-end bg-no-repeat bg-cover bg-[center_bottom_-11rem] bg-blend-multiply hover:min-h-[200px] duration-300"
+        >
+          <div class="p-2">
+            <h1
+              class="text-5xl text-white p-3 m-5 mr-20 bg-orange-500 rounded-xl bg-opacity-70 hover:text-6xl hover:bg-opacity-90 duration-200"
+            >
+              Quotes
+            </h1>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
