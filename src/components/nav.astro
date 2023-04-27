@@ -1,11 +1,32 @@
 ---
-import linkedin from '../assets/images/linkedin.png';
-import github from '../assets/images/github.png';
-import resume from '../assets/images/resume.png';
+import linkedin from "../assets/images/linkedin.png";
+import github from "../assets/images/github.png";
+import resume from "../assets/images/resume.png";
+import resumedoc from "../assets/documents/MattHanger_Resume.pdf";
 ---
 
 <ul class="flex flex-row justify-end mx-10 top-0 sticky">
-    <li><a class="text-white flex rounded-lg text-xl duration-300 px-7 py-5 hover:bg-white" href="https://www.linkedin.com/in/matt-hanger-6212b1267/" target="_blank"><img src={linkedin} alt="LinkedIn" height="45" width="45"/></a></li>
-    <li><a class="text-white flex rounded-lg text-xl duration-300 px-7 py-5 hover:bg-white" href="https://github.com/Matt-Hanger" target="_blank"><img src={github} alt="GitHub" height="45" width="45"/></a></li>
-    <li><a class="text-white flex rounded-lg text-xl duration-300 px-7 py-5 hover:bg-white" href="src/assets/documents/MattHanger_Resume.pdf" target="_blank"><img src={resume} alt="Resume" width="35"/></a></li>
+  <li>
+    <a
+      class="text-white flex rounded-lg text-xl duration-300 px-7 py-5 hover:bg-white"
+      href="https://www.linkedin.com/in/matt-hanger-6212b1267/"
+      target="_blank"
+      ><img src={linkedin} alt="LinkedIn" height="45" width="45" /></a
+    >
+  </li>
+  <li>
+    <a
+      class="text-white flex rounded-lg text-xl duration-300 px-7 py-5 hover:bg-white"
+      href="https://github.com/Matt-Hanger"
+      target="_blank"
+      ><img src={github} alt="GitHub" height="45" width="45" /></a
+    >
+  </li>
+  <li>
+    <a
+      class="text-white flex rounded-lg text-xl duration-300 px-7 py-5 hover:bg-white"
+      href={resumedoc}
+      target="_blank"><img src={resume} alt="Resume" width="35" /></a
+    >
+  </li>
 </ul>
