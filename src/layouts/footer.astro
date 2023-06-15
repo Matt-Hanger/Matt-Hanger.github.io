@@ -6,21 +6,25 @@ import layeredwaves from "../assets/images/layered-waves.png";
 import resumedoc from "../assets/documents/MattHanger_Resume.pdf";
 ---
 
-<div class="flex justify-center bg-orange-100">
+<div class="flex justify-center bg-orange-50">
   <div class="flex flex-col flex-start">
-    <div class="flex flex-row p-2 lg:gap-[200px] md:gap-[100px]">
-      <div class="flex flex-col justify-center mb-6 text-orange-950">
+    <div
+      class="flex flex-col sm:flex-row sm:p-2 p-5 lg:gap-[200px] md:gap-[100px]"
+    >
+      <div class="flex flex-col justify-center pb-3 sm:mb-6 text-orange-950">
         <h2 class="text-lg font-bold">On This Page</h2>
-        <ul class="flex flex-col mx-3 pt-3 gap-1">
+        <ul class="flex flex-row sm:flex-col mx-3 pt-3 sm:gap-1 gap-3">
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="flex flex-col justify-center mb-20 p-10 text-orange-950">
+      <div
+        class="flex flex-col justify-center sm:mb-20 sm:p-10 text-orange-950"
+      >
         <h2 class="text-lg font-bold">Links</h2>
-        <ul class="flex flex-row">
+        <ul class="flex flex-row justify-center">
           <li>
             <a
               class="text-white flex rounded-lg text-xl duration-300 px-5 py-3 hover:bg-[#4d4d4d]"
@@ -51,11 +55,11 @@ import resumedoc from "../assets/documents/MattHanger_Resume.pdf";
 </div>
 <div>
   <img
-    class="object-fill w-screen bg-orange-100"
+    class="object-fill w-screen bg-orange-50"
     src={layeredwaves}
     alt="waves"
   />
 </div>
-<p class="text-orange-500 text-center p-5">
+<p class="text-orange-500 text-center p-5 sm:mt-2 sm:text-base text-sm">
   &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
 </p>

@@ -2,15 +2,15 @@
 import waves from "../assets/images/waves.png";
 ---
 
-<div class="flex bg-orange-100">
+<div class="flex bg-orange-50">
   <div class="w-screen">
-    <img class="object-fill w-screen" src={waves} alt="waves" />
+    <img class="object-fill w-screen -mt-1" src={waves} alt="waves" />
     <div
       id="contact"
-      class="container flex justify-center mx-auto z-10 max-w-[65%] mt-10"
+      class="container flex justify-center mx-auto sm:max-w-[65%] max-w-[85%] mt-10"
     >
       <form
-        class="w-full max-w-lg p-5 px-20 bg-[#4d4d4d] rounded-lg"
+        class="w-full max-w-lg p-5 sm:px-20 px-5 bg-[#4d4d4d] rounded-lg"
         action="https://formsubmit.co/faf9536e4ab26587d3cbfdfba8883f05"
         method="POST"
       >
@@ -18,8 +18,8 @@ import waves from "../assets/images/waves.png";
         <input type="hidden" name="_captcha" value="false" />
 
         <h1 class="text-orange-500 text-4xl py-5">Get in Touch</h1>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <div class="flex flex-wrap mb-6 gap-1">
+          <div class="w-full sm:w-1/2 mb-6 sm:mb-0">
             <label
               class="block uppercase tracking-wide text-orange-500 text-xs font-bold mb-2"
               for="grid-first-name"
@@ -35,7 +35,7 @@ import waves from "../assets/images/waves.png";
               required
             />
           </div>
-          <div class="w-full md:w-1/2 px-3">
+          <div class="w-full md:w-1/2">
             <label
               class="block uppercase tracking-wide text-orange-500 text-xs font-bold mb-2"
               for="grid-last-name"

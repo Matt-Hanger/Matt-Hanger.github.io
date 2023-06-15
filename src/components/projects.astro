@@ -1,35 +1,116 @@
 ---
 import bottomskillswave from "../assets/images/bottomskillswave.png";
-import climber from "../assets/images/climber2.jpg";
-import plans from "../assets/images/plans.jpg";
+import climbs from "../assets/images/climbs.jpg";
+import quoteplan from "../assets/images/quoteplan.jpg";
+import tinyhouse from "../assets/images/tinyhouse.jpg";
+import japan from "../assets/images/japan.jpg";
 ---
 
 <div class="flex">
   <div class="w-screen">
     <img class="object-fill w-screen" src={bottomskillswave} alt="waves" />
-    <div id="projects" class="flex flex-col mx-auto max-w-[65%] my-10">
-      <div><h1 class="text-orange-700 p-10 text-5xl">Projects</h1></div>
-      <div class="grid grid-cols-2 gap-4">
+    <div
+      id="projects"
+      class="flex flex-col mx-auto sm:max-w-[65%] max-w-[85%] my-10 gap-7"
+    >
+      <div>
+        <h1 class="text-orange-700 text-center p-10 text-5xl">Projects</h1>
+      </div>
+      <div class="grid 2xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-7">
         <div
-          class="rounded-lg shadow-lg bg-[url(src/assets/images/climber3.jpg)] min-h-[150px] w-full cursor-pointer flex flex-row flex-wrap justify-end bg-no-repeat bg-cover bg-[center_top_-6rem] bg-blend-multiply hover:min-h-[200px] duration-300"
+          class="rounded-lg shadow-lg hover:shadow-xl hover:scale-[1.03] hover:-translate-y-1 w-full bg-orange-50 overflow-hidden transition ease-in-out delay-100"
         >
-          <div class="p-2">
-            <h1
-              class="text-4xl text-white p-3 m-5 mr-20 bg-orange-500 rounded-xl bg-opacity-70 hover:text-5xl hover:bg-opacity-90 duration-200"
-            >
-              Climbs
-            </h1>
+          <img
+            src={tinyhouse}
+            class="w-[100%] object-cover h-[300px] object-center"
+          />
+          <div class="p-5">
+            <h2 class="mt-[8px] mb-[12px] text-xl font-bold">Tiny House</h2>
+            <div class="summary">
+              In the last article, we implemented a simple dense network to
+              recognize MNIST images with PyTorch. In this article, we’ll stay
+              with the MNIST recognition task, but this time we’ll use
+              convolutional networks...
+            </div>
+            <div class="flex flex-row flex-wrap items-center p-5 pr-5">
+              <div
+                class="text-[#738a94] text-[0.9rem] leading-[0.9rem] font-medium"
+              >
+                Links
+              </div>
+            </div>
           </div>
         </div>
         <div
-          class="rounded-lg shadow-lg bg-[url(src/assets/images/plans.jpg)] min-h-[150px] w-full cursor-pointer flex flex-row flex-wrap justify-end bg-no-repeat bg-cover bg-[center_top_-13rem] bg-blend-multiply hover:min-h-[200px] duration-300"
+          class="rounded-lg shadow-lg hover:shadow-xl hover:scale-[1.03] hover:-translate-y-1 w-full bg-orange-50 overflow-hidden transition ease-in-out delay-100"
         >
-          <div class="p-2">
-            <h1
-              class="text-4xl text-white p-3 m-5 mr-20 bg-orange-500 rounded-xl bg-opacity-70 hover:text-5xl hover:bg-opacity-90 duration-200"
-            >
-              Quotes
-            </h1>
+          <img
+            src={quoteplan}
+            class="w-[100%] object-cover h-[300px] object-center"
+          />
+          <div class="p-5">
+            <h2 class="mt-[8px] mb-[12px] text-xl font-bold">Easy Quote</h2>
+            <div class="summary">
+              In the last article, we implemented a simple dense network to
+              recognize MNIST images with PyTorch. In this article, we’ll stay
+              with the MNIST recognition task, but this time we’ll use
+              convolutional networks...
+            </div>
+            <div class="flex flex-row flex-wrap items-center p-5 pr-5">
+              <div
+                class="text-[#738a94] text-[0.9rem] leading-[0.9rem] font-medium"
+              >
+                Links
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg shadow-lg hover:shadow-xl hover:scale-[1.03] hover:-translate-y-1 w-full bg-orange-50 overflow-hidden transition ease-in-out delay-100"
+        >
+          <img
+            src={climbs}
+            class="w-[100%] object-cover h-[300px] object-center"
+          />
+          <div class="p-5">
+            <h2 class="mt-[8px] mb-[12px] text-xl font-bold">Climbs</h2>
+            <div class="summary">
+              In the last article, we implemented a simple dense network to
+              recognize MNIST images with PyTorch. In this article, we’ll stay
+              with the MNIST recognition task, but this time we’ll use
+              convolutional networks...
+            </div>
+            <div class="flex flex-row flex-wrap items-center p-5 pr-5">
+              <div
+                class="text-[#738a94] text-[0.9rem] leading-[0.9rem] font-medium"
+              >
+                Links
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded-lg shadow-lg hover:shadow-xl hover:scale-[1.03] hover:-translate-y-1 w-full bg-orange-50 overflow-hidden transition ease-in-out delay-100"
+        >
+          <img
+            src={japan}
+            class="w-[100%] object-cover h-[300px] object-center"
+          />
+          <div class="p-5">
+            <h2 class="mt-[8px] mb-[12px] text-xl font-bold">TBA</h2>
+            <div class="summary">
+              In the last article, we implemented a simple dense network to
+              recognize MNIST images with PyTorch. In this article, we’ll stay
+              with the MNIST recognition task, but this time we’ll use
+              convolutional networks...
+            </div>
+            <div class="flex flex-row flex-wrap items-center p-5 pr-5">
+              <div
+                class="text-[#738a94] text-[0.9rem] leading-[0.9rem] font-medium"
+              >
+                Links
+              </div>
+            </div>
           </div>
         </div>
       </div>
