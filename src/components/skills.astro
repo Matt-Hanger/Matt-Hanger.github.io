@@ -1,11 +1,104 @@
 ---
+import angular from "../assets/images/angular.png";
+import figma from "../assets/images/figma.png";
+import js from "../assets/images/js.png";
+import react from "../assets/images/react.png";
+import tailwind from "../assets/images/tailwind.png";
+import ts from "../assets/images/ts.png";
+import unity from "../assets/images/unity.png";
+import github2 from "../assets/images/github2.png";
+import astro from "../assets/images/astro.png";
+import favicon2 from "../assets/images/favicon2.png";
 ---
 
-<div class="flex flex-row bg-orange-500">
+<div class="flex bg-orange-500">
   <div
     id="skills"
-    class="container flex justify-center mx-auto sm:max-w-[65%] max-w-[85%] my-10 h-[500px] rounded-lg"
+    class="container flex flex-col items-center mx-auto sm:max-w-[65%] max-w-[85%] my-10 rounded-lg"
   >
-    <h1 class="text-orange-50 p-10 text-5xl">Skills</h1>
+    <div class="flex flex-row justify-center sm:py-14 pb-7">
+      <h1 class="text-[#4d4d4d] font-bold items-center sm:text-5xl text-4xl">
+        Skills
+      </h1>
+      <img
+        class="sm:h-4 sm:w-4 h-3 w-3 mt-[25px] sm:mt-[30px] ml-1"
+        src={favicon2}
+      />
+    </div>
+
+    <div
+      class="grid grid-cols-2 sm:grid-cols-3 gap-5 lg:gap-x-48 sm:gap-x-20 sm:text-xl text-sm font-semibold text-[#4d4d4d]"
+    >
+      <div class="flex flex-row items-center gap-2">
+        <img
+          class="rounded-lg sm:h-14 sm:w-14 h-10 w-10"
+          src={js}
+          alt="github"
+        /><h2 class="px-2">Javascript</h2>
+      </div>
+      <div class="flex flex-row items-center gap-2">
+        <img
+          class="rounded-lg sm:h-14 sm:w-14 h-10 w-10"
+          src={react}
+          alt="github"
+        /><h2 class="px-2">React.js</h2>
+      </div>
+      <div class="flex flex-row items-center gap-2">
+        <img
+          class="rounded-lg sm:h-14 sm:w-14 h-10 w-10"
+          src={figma}
+          alt="github"
+        /><h2 class="px-2">Figma</h2>
+      </div>
+      <div class="flex flex-row items-center gap-2">
+        <img
+          class="rounded-lg sm:h-14 sm:w-14 h-10 w-10"
+          src={ts}
+          alt="github"
+        /><h2 class="px-2">Typescript</h2>
+      </div>
+      <div class="flex flex-row items-center gap-2">
+        <img
+          class="rounded-lg sm:h-14 sm:w-14 h-10 w-10"
+          src={react}
+          alt="github"
+        /><h2 class="px-2">React-Native</h2>
+      </div>
+      <div class="flex flex-row items-center gap-2">
+        <img
+          class="rounded-lg sm:h-14 sm:w-14 h-10 w-10"
+          src={unity}
+          alt="github"
+        /><h2 class="px-2">Unity</h2>
+      </div>
+      <div class="flex flex-row items-center gap-2">
+        <img
+          class="rounded-lg sm:h-14 sm:w-14 h-10 w-10"
+          src={tailwind}
+          alt="github"
+        /><h2 class="px-2">Tailwind</h2>
+      </div>
+      <div class="flex flex-row items-center gap-2">
+        <img
+          class="rounded-lg sm:h-14 sm:w-14 h-10 w-10"
+          src={angular}
+          alt="github"
+        /><h2 class="px-2">Angular</h2>
+      </div>
+      <div class="flex flex-row items-center gap-2">
+        <img
+          class="rounded-lg sm:h-14 sm:w-14 h-10 w-10"
+          src={github2}
+          alt="github"
+        /><h2 class="px-2">GitHub</h2>
+      </div>
+      <div class="flex flex-row items-center gap-2">
+        <img
+          class="rounded-lg sm:h-14 sm:w-14 h-10 w-10"
+          src={astro}
+          alt="github"
+        /><h2 class="px-2">Astro</h2>
+      </div>
+    </div>
   </div>
 </div>

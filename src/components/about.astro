@@ -1,9 +1,18 @@
 ---
+import favicon from "../assets/images/favicon.png";
 ---
 
 <div
   id="about"
   class="container flex justify-center mx-auto sm:max-w-[65%] max-w-[85%] my-10 h-[500px] bg-orange-50 rounded-lg"
 >
-  <h1 class="text-orange-700 p-10 text-5xl">About</h1>
+  <div class="flex flex-row justify-center p-10">
+    <h1 class="text-orange-500 font-bold items-center sm:text-5xl text-4xl">
+      About
+    </h1>
+    <img
+      class="sm:h-4 sm:w-4 h-3 w-3 mt-[25px] sm:mt-[30px] ml-1"
+      src={favicon}
+    />
+  </div>
 </div>
