@@ -19,12 +19,12 @@ const name = "Matt";
 
   // set up the canvas and context
   const canvas = document.getElementById("cube") as HTMLCanvasElement;
-  document.body.appendChild(canvas);
+  //document.body.appendChild(canvas);
   var ctx = canvas.getContext("2d");
 
   // dimensions
-  var h = 100;
-  var w = 100;
+  var h = 500;
+  var w = 500;
   canvas.height = h;
   canvas.width = w;
 
@@ -121,19 +121,27 @@ const name = "Matt";
     class="flex sm:container mx-auto sm:max-w-[65%] max-w-[85%] my-40 2xl:pt-[300px] xl:pt-[250px] lg:pt-[250px] sm:pt-[150px] pt-[100px]"
   >
     <div class="flex flex-col sm:mb-20 mb-28">
-      <div class="flex flex-row">
-        <h1
-          class="font-bold text-white py-5 xl:text-6xl 2xl:text-7xl lg:text-5xl sm:text-4xl text-2xl"
-        >
-          <span
-            class="xl:text-6xl 2xl:text-7xl lg:text-5xl sm:text-4xl text-3xl"
-            >Hi, I'm <span class="text-orange-500">{name}</span>.</span
-          ><br /> I'm a front-end developer.
-        </h1>
-        <div class="flex container w-10 h-10">
-          <canvas class="h-10 w-10 mx-auto my-auto" id="cube"
-            ><h1>CUBE</h1></canvas
-          >
+      <div class="flex flex-col gap-1 py-5">
+        <div class="flex flex-row items-end">
+          <div class="flex flex-col mr-2">
+            <h1
+              class="font-bold text-white xl:text-6xl 2xl:text-7xl lg:text-5xl sm:text-4xl text-2xl"
+            >
+              <span class="items-end"
+                >Hi, I'm <span class="text-orange-500"> {name}</span>.</span
+              >
+            </h1>
+            <div
+              class="font-bold text-white xl:text-5xl 2xl:text-6xl lg:text-4xl sm:text-3xl text-lg"
+            >
+              <h1>I'm a front-end developer.</h1>
+            </div>
+          </div>
+          <div class="flex">
+            <canvas
+              class="sm:h-[100px] h-[50px] w-[50px] sm:w-[100px] xl:h-[180px] xl:w-[180px] lg:h-[140px] lg:w-[140px]"
+              id="cube"></canvas>
+          </div>
         </div>
       </div>
       <ul class="flex">
